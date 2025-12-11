@@ -1,0 +1,34 @@
+{
+  "name": "laravel-php-class-generator",
+  "displayName": "Laravel PHP Class Generator",
+  "description": "Genera clases PHP con namespace basado en la carpeta (estilo Laravel).",
+  "version": "0.0.1",
+  "publisher": "infinito",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:laravelPhpClassGenerator.createPhpClass"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "laravelPhpClassGenerator.createPhpClass",
+        "title": "Crear clase PHP (Laravel)",
+        "category": "Laravel PHP"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "laravelPhpClassGenerator.createPhpClass",
+        "key": "cmd+enter",
+        "when": "editorTextFocus && editorLangId == php",
+        "mac": "cmd+enter"
+      }
+    ]
+  }
+}
