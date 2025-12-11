@@ -65,6 +65,11 @@ class ${className}
     {
         //
     }
+    
+    public function __invoke()
+    {
+        //
+    }
 }
 `;
 
